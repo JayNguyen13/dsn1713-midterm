@@ -2,12 +2,25 @@
 
 /* Set custom variables here */
 
+:root {
+  --bs-body-bg: #F6F3ED;
+  --bs-light: #F6F3ED;
+  --bs-primary: #2e483a;
+  --bs-primary-rgb: 46, 72, 58;
+}
+.btn {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary) ;
+}
+#how-it-works p{
+  max-width: 750px;
+  margin: 0 auto;
+}
 
 
+.customer-bg {
+  background-color: var(--bg-primary) ;
 
-
-.navbar-brand {
-  color: #F6F3ED;
 }
 
 body {
@@ -43,11 +56,21 @@ h1, h2, h3 {
 }
 
 section:not(#hero):not(#cta){
-  padding: 60px 0;
+  padding: 10px 0;
 }
 
 @media(min-width: 993px){
   section:not(#hero):not(#cta){
-    padding: 100px 0;
+    padding: 10px 0;
   }
+}
+
+@media(max-width: 993px){
+  #Smarter{
+    text-align: center;
+  }
+}
+
+.fig {
+  font-size: 12px;
 }
